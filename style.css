@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: url(images/placeholder.jpg);
+    background-image: url(images/earthimage.avif);
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -24,7 +24,7 @@ body {
     left: 0;
     width: 100%;
     padding: 25px 12.5% ;
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgb(0, 0, 0,);
     display: flex;
     justify-content: space-between;
     align-items: center;
