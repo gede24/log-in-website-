@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: url(images/placeholder.jpg);
+    background-image: url(images/earthimage.avif);
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -24,17 +24,18 @@ body {
     left: 0;
     width: 100%;
     padding: 25px 12.5% ;
-    background-color: rgba(128, 128, 128, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    
 }
 
 /* navbar design */
 
 .navbar {
     display: flex;
+    
 
 }
 
@@ -68,25 +69,37 @@ body {
 .search-bar {
     width: 250px;
     height: 35px;
-    background: transparent;
-    border: solid 2px white;
+    border: solid 2px transparent;
     border-radius: 6px;
     display: flex;
     align-items: center;
+    background-color: transparent;
 }
 
 .search-bar input {
     width: 100%;
     height: 100%;
-    background: transparent;
+    background-color: transparent;
     font-size: large;
     color: white;
+    outline: none;
+    border: rgba(255, 255, 255, 0.15) 2px solid;
 }
 
 .search-bar button {
     width: 40px;
     height: 100%;
-    background: transparent;
+    border: rgba(255, 255, 255, 0.15) 2px solid;
+    outline: none;
+
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+
+    background-image: url(images/searchingicon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+
 }
 
 /* general log in div design */
@@ -97,7 +110,7 @@ body {
     transform: translate(-50%, -50%);
     width: 400px;
     padding: 40px;
-    background: grey;
+    backdrop-filter: blur(10px);
    
     border-radius: 10px;
 }
@@ -112,8 +125,14 @@ body {
     width: 100%;;
     height: 35px;
     font-size: large;
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
     
 }
+
 
 /* password input and div design */
 
@@ -124,7 +143,12 @@ body {
 .password input {
     width: 100%;
     height: 35px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
     font-size: large;
+    border-bottom: 2px solid white;
 
 }
 
@@ -167,7 +191,6 @@ body {
 .button {
     width: 100%;
     height: 35px;
-    background: transparent;
     border-radius: 6px;
     display: flex;
     justify-content: center;
@@ -177,9 +200,21 @@ body {
 .button button {
     width: 100%;
     height: 100%;
-    background: white;
-    font-size: large;
+    border-color: rgba(0, 0, 0, 0.5);
+    background: rgb(255, 255, 255);
+    border: 2px solid transparent;
+    outline: none;
+   font-size: large;
 }
+
+.button :hover {
+    background: rgb(255, 255, 255, 0.15);
+    cursor: pointer;
+    color: #fff;
+    border-color: #fff;
+}
+
+
 
 
 .register-link{
@@ -191,7 +226,7 @@ body {
     font-size: medium;
 }
 
-/* register link design */
+
 .register-link a {
     color: white;
     position: relative;
